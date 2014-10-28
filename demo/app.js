@@ -5,6 +5,8 @@ require.config({
     }
 });
 
-require(['iwc', '../dist/iwc-autocomplete', 'jquery'], function (iwc) {
-    // ...
+require(['iwc', '../dist/iwc-autocomplete'], function (iwc) {
+    iwc.load(document.body, function() {
+        console.log("Loaded!");
+    });
 });

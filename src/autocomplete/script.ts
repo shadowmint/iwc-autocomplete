@@ -16,12 +16,13 @@ export class Autocomplete {
 
     /** Raw template for this component */
     public content():any {
+        console.log(data.markup);
         return data.markup;
     }
 
     /** Run on start up */
     public init():void {
-        // TODO
+        console.log(this.data);
     }
 }
 
